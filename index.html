@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fortis Continuity</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<style>
+
+/* ===== BODY ===== */
+
+body{
+margin:0;
+font-family:Segoe UI;
+background:#0b1f3a;
+color:white;
+scroll-behavior:smooth;
+}
+
+
+/* ===== NAVBAR ===== */
+
+.nav{
+
+position:fixed;
+top:0;
+width:100%;
+background:#06142b;
+display:flex;
+justify-content:space-between;
+padding:15px 40px;
+z-index:1000;
+
+}
+
+.nav a{
+
+color:white;
+margin:10px;
+text-decoration:none;
+transition:0.3s;
+
+}
+
+.nav a:hover{
+color:#00c3ff;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+
+/* ===== HERO ===== */
+
+.hero{
+
+height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
+url("https://images.unsplash.com/photo-1451187580459-43490279c0fa");
+
+background-size:cover;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+}
+
+.hero h1{
+font-size:45px;
+}
+
+.hero button{
+
+padding:12px 25px;
+background:#00aaff;
+border:none;
+color:white;
+font-size:16px;
+cursor:pointer;
+
+}
+
+.hero button:hover{
+
+background:#0088cc;
+
+}
+
+
+/* ===== SECTION ===== */
+
+.section{
+
+padding:80px 40px;
+
+}
+
+
+/* ===== GRID ===== */
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+}
+
+
+/* ===== CARD ===== */
+
+.card{
+
+background:#123d7a;
+padding:30px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+background:#1c5ed6;
+
+}
+
+.card i{
+
+font-size:40px;
+margin-bottom:10px;
+
+}
+
+
+/* ===== TECHNOLOGY LIST ===== */
+
+.tech{
+
+columns:2;
+
+}
+
+
+/* ===== CONTACT ===== */
+
+.contact{
+
+background:#06142b;
+
+}
+
+
+/* ===== FOOTER ===== */
+
+footer{
+
+background:#020c1c;
+text-align:center;
+padding:20px;
+
+}
+
+</style>
+
+
+<script>
+
+function contact(){
+
+alert(
+"Email: info@fortiscont.com\n\n" +
+"Australia: +61-433 752 567\n" +
+"India: +91-7508286021"
+);
+
+}
+
+</script>
+
+</head>
+
+
+<body>
+
+
+
+<!-- NAVBAR -->
+
+<div class="nav">
+
+<div class="logo">
+
+Fortis Continuity
+
+</div>
+
+<div>
+
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#technology">Technology</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</div>
+
+
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+<h1>
+
+Protect Your Business from Downtime,
+Data Loss, and Disasters
+
+</h1>
+
+<p>
+
+Business Continuity & Disaster Recovery Solutions
+
+</p>
+
+<button onclick="contact()">
+
+Talk to Expert
+
+</button>
+
+</section>
+
+
+
+<!-- SERVICES -->
+
+<section id="services" class="section">
+
+<h2>Our Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<i class="fa fa-shield"></i>
+<h3>Business Continuity</h3>
+</div>
+
+<div class="card">
+<i class="fa fa-database"></i>
+<h3>Disaster Recovery</h3>
+</div>
+
+<div class="card">
+<i class="fa fa-cloud"></i>
+<h3>Cloud Backup</h3>
+</div>
+
+<div class="card">
+<i class="fa fa-laptop"></i>
+<h3>Workplace Recovery</h3>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- TECHNOLOGY -->
+
+<section id="technology" class="section">
+
+<h2>Technology Services</h2>
+
+<div class="tech">
+
+<p>Custom Software Development</p>
+<p>Mobile Applications</p>
+<p>AI & Automation</p>
+<p>System Integration</p>
+<p>Cloud & DevOps</p>
+<p>Maintenance</p>
+<p>Consulting</p>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact"
+class="section contact">
+
+<h2>Contact Us</h2>
+
+<p>Email: info@fortiscont.com</p>
+
+<p>Australia +61-433 752 567</p>
+
+<p>India +91-7508286021</p>
+
+<button onclick="contact()">
+
+Contact Expert
+
+</button>
+
+</section>
+
+
+
+<footer>
+
+© Fortis Continuity
+
+</footer>
+
+
+
+</body>
+</html>
