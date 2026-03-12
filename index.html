@@ -1,196 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Fortis Continuity</title>
+    <title>Fortis Continuity</title>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="description" content="Business Continuity & Disaster Recovery Solutions">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<style>
 
-/* ===== BODY ===== */
+    <style>
+        /* ===== BODY ===== */
 
-body{
-margin:0;
-font-family:Segoe UI;
-background:#0b1f3a;
-color:white;
-scroll-behavior:smooth;
-}
+        body {
+            margin: 0;
+            font-family: Segoe UI;
+            background: #0b1f3a;
+            color: white;
+            scroll-behavior: smooth;
+        }
 
 
-/* ===== NAVBAR ===== */
+        /* ===== NAVBAR ===== */
 
-.nav{
+        .nav {
 
-position:fixed;
-top:0;
-width:100%;
-background:#06142b;
-display:flex;
-justify-content:space-between;
-padding:15px 40px;
-z-index:1000;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #06142b;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 40px;
+            z-index: 1000;
 
-}
+        }
 
-.nav a{
+        .nav a {
 
-color:white;
-margin:10px;
-text-decoration:none;
-transition:0.3s;
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            transition: 0.3s;
 
-}
+        }
 
-.nav a:hover{
-color:#00c3ff;
-}
+        .nav a:hover {
+            color: #00c3ff;
+        }
 
-.logo{
-font-size:22px;
-font-weight:bold;
-}
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
 
+        .tagline {
+            font-size: 12px;
+            color: #00c3ff;
+            margin-top: 5px;
+        }
 
-/* ===== HERO ===== */
 
-.hero{
+        /* ===== HERO ===== */
 
-height:100vh;
+        .hero {
 
-background:
-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
-url("https://images.unsplash.com/photo-1451187580459-43490279c0fa");
+            height: 100vh;
 
-background-size:cover;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+                url("https://images.unsplash.com/photo-1451187580459-43490279c0fa");
 
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
+            background-size: cover;
 
-}
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
 
-.hero h1{
-font-size:45px;
-}
+        }
 
-.hero button{
+        .hero h1 {
+            font-size: 45px;
+        }
 
-padding:12px 25px;
-background:#00aaff;
-border:none;
-color:white;
-font-size:16px;
-cursor:pointer;
+        .hero button {
 
-}
+            padding: 12px 25px;
+            background: #00aaff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
 
-.hero button:hover{
+        }
 
-background:#0088cc;
+        .hero button:hover {
 
-}
+            background: #0088cc;
 
+        }
 
-/* ===== SECTION ===== */
 
-.section{
+        /* ===== SECTION ===== */
 
-padding:80px 40px;
+        .section {
 
-}
+            padding: 80px 40px;
 
+        }
 
-/* ===== GRID ===== */
 
-.grid{
+        /* ===== GRID ===== */
 
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+        .grid {
 
-}
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
 
+        }
 
-/* ===== CARD ===== */
 
-.card{
+        /* ===== CARD ===== */
 
-background:#123d7a;
-padding:30px;
-border-radius:10px;
-text-align:center;
-transition:0.3s;
+        .card {
 
-}
+            background: #123d7a;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
 
-.card:hover{
+        }
 
-transform:translateY(-10px);
-background:#1c5ed6;
+        .card:hover {
 
-}
+            transform: translateY(-10px);
+            background: #1c5ed6;
 
-.card i{
+        }
 
-font-size:40px;
-margin-bottom:10px;
+        .card i {
 
-}
+            font-size: 40px;
+            margin-bottom: 10px;
 
+        }
 
-/* ===== TECHNOLOGY LIST ===== */
 
-.tech{
+        /* ===== TECHNOLOGY LIST ===== */
 
-columns:2;
+        .tech {
 
-}
+            columns: 2;
 
+        }
 
-/* ===== CONTACT ===== */
 
-.contact{
+        /* ===== CONTACT ===== */
 
-background:#06142b;
+        .contact {
 
-}
+            background: #06142b;
 
+        }
 
-/* ===== FOOTER ===== */
 
-footer{
+        /* ===== FOOTER ===== */
 
-background:#020c1c;
-text-align:center;
-padding:20px;
+        footer {
 
-}
+            background: #020c1c;
+            text-align: center;
+            padding: 20px;
 
-</style>
+        }
+    </style>
 
 
-<script>
+    <script>
 
-function contact(){
+        function contact() {
 
-alert(
-"Email: info@fortiscont.com\n\n" +
-"Australia: +61-433 752 567\n" +
-"India: +91-7508286021"
-);
+            alert(
+                "Email: info@fortiscont.com\n" +
+            );
 
-}
+        }
 
-</script>
+    </script>
 
 </head>
 
@@ -199,142 +203,218 @@ alert(
 
 
 
-<!-- NAVBAR -->
+    <!-- NAVBAR -->
 
-<div class="nav">
+    <div class="nav">
 
-<div class="logo">
+        <div class="logo">
 
-Fortis Continuity
+            Fortis Continuity
+            <div class="tagline">Reliable Technology. Continuous Business.</div>
 
-</div>
+        </div>
 
-<div>
+        <div>
 
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#technology">Technology</a>
-<a href="#contact">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#technology">Technology</a>
+            <a href="#contact">Contact</a>
 
-</div>
+        </div>
 
-</div>
-
-
-
-<!-- HERO -->
-
-<section id="home" class="hero">
-
-<h1>
-
-Protect Your Business from Downtime,
-Data Loss, and Disasters
-
-</h1>
-
-<p>
-
-Business Continuity & Disaster Recovery Solutions
-
-</p>
-
-<button onclick="contact()">
-
-Talk to Expert
-
-</button>
-
-</section>
+    </div>
 
 
 
-<!-- SERVICES -->
+    <!-- HERO -->
 
-<section id="services" class="section">
+    <section id="home" class="hero">
 
-<h2>Our Services</h2>
+        <h1>
 
-<div class="grid">
+            Protect Your Business from Downtime, Data Loss and Disasters
 
-<div class="card">
-<i class="fa fa-shield"></i>
-<h3>Business Continuity</h3>
-</div>
+        </h1>
 
-<div class="card">
-<i class="fa fa-database"></i>
-<h3>Disaster Recovery</h3>
-</div>
+        <h4>
 
-<div class="card">
-<i class="fa fa-cloud"></i>
-<h3>Cloud Backup</h3>
-</div>
+            Business Continuity & Disaster Recovery Solutions
 
-<div class="card">
-<i class="fa fa-laptop"></i>
-<h3>Workplace Recovery</h3>
-</div>
+        </h4>
 
-</div>
+        <p>
+            We are a technology solutions company focused on helping organizations build resilient, secure, and scalable
+            digital infrastructure. <br>
+            Our mission is to ensure that businesses remain operational and protected against unexpected disruptions by
+            providing Business Continuity and Disaster Recovery solutions combined with modern cloud technologies.<br>
+            With deep expertise in enterprise software development, cloud infrastructure, and automation technologies,
+            we help organizations design robust systems that support long-term growth and operational stability.<br>
 
-</section>
+        </p>
 
+        <button onclick="contact()">
 
+            Talk to Expert
 
-<!-- TECHNOLOGY -->
+        </button>
 
-<section id="technology" class="section">
-
-<h2>Technology Services</h2>
-
-<div class="tech">
-
-<p>Custom Software Development</p>
-<p>Mobile Applications</p>
-<p>AI & Automation</p>
-<p>System Integration</p>
-<p>Cloud & DevOps</p>
-<p>Maintenance</p>
-<p>Consulting</p>
-
-</div>
-
-</section>
+    </section>
 
 
 
-<!-- CONTACT -->
+    <!-- SERVICES -->
 
-<section id="contact"
-class="section contact">
+    <section id="services" class="section">
 
-<h2>Contact Us</h2>
+        <h2>Our Services</h2>
+        <section>
+            <h4>1. Business Continuity & Disaster Recovery</h4>
+            <p>
+                Our Business Continuity and Disaster Recovery solutions ensure that organizations can quickly recover
+                from unexpected
+                disruptions such as cyberattacks, infrastructure failures, natural disasters, or system outages.<br>
+            <h5>Our Capabilities Include:</h5>
+            • Business Impact Analysis (BIA)<br>
+            • Disaster Recovery Planning<br>
+            • Automated Backup and Replication<br>
+            • Multi-location Data Storage<br>
+            • Cloud Disaster Recovery<br>
+            • Rapid Infrastructure Restoration<br>
+            • Failover and Failback Systems<br>
+            Our automated recovery processes allow organizations to restore systems within 2–3 hours, minimizing
+            operational disruption and financial loss.
+            </p>
+            <h4>2. Workplace Recovery Solutions</h4>
+            <p>
+                Unexpected events such as building damage, power outages, or infrastructure failures can make office
+                environments unusable. <br>
+                Our Workplace Recovery solutions ensure that employees can continue working seamlessly from alternate
+                environments.
+            <h5>Key Features</h5>
+            • Remote working infrastructure<br>
+            • Cloud-based virtual workstations<br>
+            • Secure access to business systems<br>
+            • Alternate office environment integration<br>
+            • Secure VPN connectivity<br>
+            This ensures that business operations continue without interruption even if the primary office becomes
+            unavailable.
+            </p>
+            <h4>3. TECHNOLOGY SERVICES</h4>
+            <p>
+            <h5>Custom Software Development</h5>
+            We design and develop tailored software applications that align with business processes and operational
+            requirements.
+            Our development services include:<br>
+            • Enterprise business applications<br>
+            • Web portals and enterprise platforms<br>
+            • Business automation systems<br>
+            • Custom CMS and web platforms<br>
+            • Scalable SaaS platforms
+            </p>
+            <h4>4. Software Upgrade & Maintenance</h4>
+            <p>
+                Technology systems require continuous upgrades and maintenance to remain secure and efficient.<br>
+                We provide ongoing support for both internally developed systems and applications developed by
+                third-party vendors.
+            <h5>Our services include:</h5>
+            • Software modernization<br>
+            • Performance optimization<br>
+            • Bug fixing and patch management<br>
+            • Feature enhancements and module additions<br>
+            • Long-term technical support<br>
+            </p>
+        </section>
 
-<p>Email: info@fortiscont.com</p>
-
-<p>Australia +61-433 752 567</p>
-
-<p>India +91-7508286021</p>
-
-<button onclick="contact()">
-
-Contact Expert
-
-</button>
-
-</section>
 
 
 
-<footer>
 
-© Fortis Continuity
 
-</footer>
+
+        <div class="grid">
+
+            <div class="card">
+                <i class="fa fa-shield"></i>
+                <h3>Business Continuity</h3>
+            </div>
+
+            <div class="card">
+                <i class="fa fa-database"></i>
+                <h3>Disaster Recovery</h3>
+            </div>
+
+            <div class="card">
+                <i class="fa fa-cloud"></i>
+                <h3>Cloud Backup</h3>
+            </div>
+
+            <div class="card">
+                <i class="fa fa-laptop"></i>
+                <h3>Workplace Recovery</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- TECHNOLOGY -->
+
+    <section id="technology" class="section">
+
+        <h2>Technology Services</h2>
+
+        <div class="tech">
+
+            <p>Custom Software Development</p>
+            <p>Mobile Applications</p>
+            <p>AI & Automation</p>
+            <p>System Integration</p>
+            <p>Cloud & DevOps</p>
+            <p>Maintenance</p>
+            <p>Consulting</p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="hero">
+
+        <h2>Contact Us</h2>
+        <p>
+            If you are looking for reliable technology solutions or want to strengthen your organization’s resilience
+            against system failures and disasters, our experts are ready to help.<br>
+            We offer customized solutions that align with your business needs and ensure continuous operations even in
+            the face of unexpected disruptions.
+        </p>
+        <h4>Contact us today to discuss your project requirements.</h4>
+        <p>
+        <p>Email: <a href="mailto:info@fortiscont.com">info@Fortiscont.com</a></p>
+        </p>
+
+        <button onclick="contact()">
+
+            Talk to Expert
+
+        </button>
+    </section>
+
+
+
+    <footer>
+
+        © Fortis Continuity
+
+    </footer>
 
 
 
 </body>
+
 </html>
